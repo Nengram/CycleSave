@@ -1,0 +1,7 @@
+import { handle, ok } from "@/lib/http";
+import { getSession } from "@/lib/auth";
+
+export const GET = handle(async () => {
+  const session = await getSession();
+  return ok({ user: session });
+});

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>CycleSave — Save Together</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <a href="/" class="logo">
+        <span class="logo-mark">C</span>
+        <span class="logo-text">CycleSave</span>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="#home">Home</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/login" class="login-link">Log in</a>
+
+        <a href="/create-njangi" class="create-button">
+          <span>Create New Njangi</span>
+        </a>
+      </div>
+
+      <button
+        class="mobile-menu-button"
+        type="button"
+        aria-label="Open menu"
+        onclick="toggleMobileMenu()"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" onclick="closeMobileMenu()">Home</a>
+      <a href="#how-it-works" onclick="closeMobileMenu()">How it works</a>
+      <a href="#about" onclick="closeMobileMenu()">About</a>
+
+      <div class="mobile-menu-divider"></div>
+
+      <a href="/login" onclick="closeMobileMenu()">Log in</a>
+
+      <a
+        href="/create-njangi"
+        class="mobile-create-button"
+        onclick="closeMobileMenu()"
+      >
+        Create New Njangi
+      </a>
+    </div>
+  </header>
+
+
+  <!-- ================= MAIN ================= -->
+  <main id="home">
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <div class="hero-copy">
+
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Save together. Grow together.
+          </div>
+
+          <h1>
+            Your Njangi.
+            <span>Made Simple.</span>
+          </h1>
+
+          <p class="hero-description">
+            Create and manage your Njangi digitally.
+            Keep contributions organized, make the rotation
+            clear, and build trust with every cycle.
+          </p>
+
+          <div class="hero-actions">
+
+            <a href="/create-njangi" class="hero-button">
+              Create New Njangi
+              <span class="arrow">→</span>
+            </a>
+
+            <a href="#how-it-works" class="secondary-button">
+              See how it works
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-card-wrapper">
+
+          <div class="hero-card">
+
+            <div class="card-top">
+              <div>
+                <p class="card-label">Your Njangi</p>
+                <h2>Family Circle</h2>
+              </div>
+
+              <div class="status">
+                Active
+              </div>
+            </div>
+
+            <div class="card-amount">
+              <span>Current contribution</span>
+              <strong>50,000 FCFA</strong>
+            </div>
+
+            <div class="card-progress">
+              <div class="progress-heading">
+                <span>Cycle progress</span>
+                <span>4 / 10</span>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress-value"></div>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <span>Next collector</span>
+              <strong>Marie N.</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="section" id="how-it-works">
+
+      <div class="section-heading">
+
+        <p class="section-eyebrow">
+          HOW IT WORKS
+        </p>
+
+        <h2>
+          Njangi without the paperwork.
+        </h2>
+
+        <p>
+          Everything you need to start and manage your
+          savings group in one simple place.
+        </p>
+
+      </div>
+
+
+      <div class="steps-grid">
+
+        <article class="step-card">
+
+          <div class="step-number">
+            01
+          </div>
+
+          <h3>Create your account</h3>
+
+          <p>
+            Sign up for CycleSave so your Njangi
+            and contributions can be securely connected
+            to your account.
+          </p>
+
+        </article>
+
+
+        <article class="step-card">
+
+          <div class="step-number">
+            02
+          </div>
+
+          <h3>Create your Njangi</h3>
+
+          <p>
+            Set your contribution amount, members,
+            collection schedule and cycle rules.
+          </p>
+
+        </article>
+
+
+        <article class="step-card">
+
+          <div class="step-number">
+            03
+          </div>
+
+          <h3>Save together</h3>
+
+          <p>
+            Keep track of contributions and know
+            exactly when each member collects.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="cta-section" id="about">
+
+      <div class="cta-content">
+
+        <p class="section-eyebrow">
+          READY TO START?
+        </p>
+
+        <h2>
+          Create your first Njangi.
+        </h2>
+
+        <p>
+          Create an account first, then set up your
+          Njangi in just a few steps.
+        </p>
+
+        <a href="/create-njangi" class="hero-button">
+          Create New Njangi
+          <span class="arrow">→</span>
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <div class="footer-brand">
+
+        <a href="/" class="logo footer-logo">
+          <span class="logo-mark">C</span>
+          <span class="logo-text">CycleSave</span>
+        </a>
+
+        <p>
+          Save together. Grow together.
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <a href="#home">Home</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#about">About</a>
+        <a href="/login">Log in</a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 CycleSave. All rights reserved.
+      </span>
+
+      <span>
+        Built for Njangi communities.
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("open");
+    }
+
+    function closeMobileMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.remove("open");
+    }
+  </script>
+
+</body>
+</html>
